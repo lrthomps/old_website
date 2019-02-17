@@ -1,52 +1,72 @@
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
         <style>
-            iframe { margin: 0;
+            body { margin: 5%;
             padding: 0;
             border: none;
-            width: 265px;
-            max-width: 100%;
+            min-width: 265px;
+            max-width: 1000px;
             height: 278px;
             }
-            h1 { font-family: Arial;}
-            p { font-family: Georgia; }
             
-            search { margin: 0;
-            padding: 0;
-            border: none;
-            width:500;
-            max-width: 100%;
-            height:100;}
+
         </style>
 
 
-        <title>Written by Lara Thompson</title>
+        <title>LT's resources</title>
     </head>
 <body>
-    <h1>Written by Lara Thompson</h1>
-    
-    <p>I'll get more up here soon! In the meantime...</p>
-    
-    
-    <h3>Books!</h3>
-    I try to review everything I read. I fail on some comics, some short stories, but those don't count to the number of  books read...
+    <h1>Random places to start</h1>
+    <p>The <a href="https://github.com/learn-data-science/data-science-reading">papers</a>
+        suggested and chosen in the Vancouver <a href="https://www.meetup.com/LearnDataScience/">DS reading group</a>
+        that takes place downtown on alternate Weds.</p>
+
+    <h1>Common Datasets</h1>
+
+    <p>Image sets (labelled):
+      <ul>
+        <li>
+          <a href="http://yann.lecun.com/exdb/mnist/">MNIST</a>: the hello world of machine learning;
+            25x25, centered, B&W handwritten digits. A good place to
+            <a href="https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/_index.ipynb" target="__blank">get started</a>
+            with easy wins to be made. Papers still publish new algorithms "benchmarked" with MNIST:
+            think of it more as a proof of concept, not proof of better models.
+            Papers should still include more complex datasets to make meaningful statements about any
+            "advances" their work introduces.
+        </li>
+        <li>
+            <a href="http://www.cs.utoronto.ca/~kriz/cifar.html">CIFAR10/100</a>: 32x32 colour images in 10/100 classes,
+            with 6000/600 images per class. Stop
+            <a href="https://towardsdatascience.com/cifar-10-image-classification-in-tensorflow-5b501f7dc77c">here</a>
+            after MNIST. Download either from the source as pickle files or use
+            <a href="https://www.tensorflow.org/api_docs/python/tf/keras/datasets">tensorflow.keras.datasets</a>.
+        </li>
+        <li>
+            <a href="http://image-net.org/">ImageNet</a>: with ~500 images per noun category of
+            <a href="https://wordnet.princeton.edu/">WordNet</a>, this image set is close to or already overfit by
+            researchers always benchmarking to it
+        </li>
+      </ul>
+
+
+
 
 <!-- ******GOODREADS******* -->
 
    
-      <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
+            <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
       <style type="text/css" media="screen">
-  .gr_custom_container_1468361957 {
+  .gr_custom_container_1550341854 {
     /* customize your Goodreads widget container here*/
     border: 1px solid gray;
     border-radius:10px;
     padding: 10px 5px 10px 5px;
     background-color: #FFFFFF;
     color: #000000;
-    
+    width: 300px
   }
-  .gr_custom_header_1468361957 {
+  .gr_custom_header_1550341854 {
     /* customize your Goodreads header here*/
     border-bottom: 1px solid gray;
     width: 100%;
@@ -54,7 +74,7 @@
     text-align: center;
     font-size: 120%
   }
-  .gr_custom_each_container_1468361957 {
+  .gr_custom_each_container_1550341854 {
     /* customize each individual book container here */
     width: 100%;
     clear: both;
@@ -63,7 +83,7 @@
     padding-bottom: 4px;
     border-bottom: 1px solid #aaa;
   }
-  .gr_custom_book_container_1468361957 {
+  .gr_custom_book_container_1550341854 {
     /* customize your book covers here */
     overflow: hidden;
     height: 60px;
@@ -71,126 +91,112 @@
       margin-right: 4px;
       width: 39px;
   }
-  .gr_custom_author_1468361957 {
+  .gr_custom_author_1550341854 {
     /* customize your author names here */
     font-size: 10px;
   }
-  .gr_custom_tags_1468361957 {
+  .gr_custom_tags_1550341854 {
     /* customize your tags here */
     font-size: 10px;
     color: gray;
   }
-  .gr_custom_rating_1468361957 {
+  .gr_custom_rating_1550341854 {
     /* customize your rating stars here */
     float: right;
   }
 </style>
 
-      <div id="gr_custom_widget_1468361957">
-          <div class="gr_custom_container_1468361957">
-    <h2 class="gr_custom_header_1468361957">
-    <a style="text-decoration: none;" href="https://www.goodreads.com/review/list/3114636-lara-thompson?shelf=read&amp;utm_medium=api&amp;utm_source=custom_widget">A few recent reviews</a>
+      <div id="gr_custom_widget_1550341854">
+          <div class="gr_custom_container_1550341854">
+    <h2 class="gr_custom_header_1550341854">
+    <a style="text-decoration: none;" rel="nofollow" href="https://www.goodreads.com/review/list/3114636-lara-thompson?shelf=technical&amp;utm_medium=api&amp;utm_source=custom_widget">Recent DS/Science Reads</a>
     </h2>
-      <div class="gr_custom_each_container_1468361957">
-          <div class="gr_custom_book_container_1468361957">
-            <a title="Traitor's Blade (Greatcoats, #1)" href="https://www.goodreads.com/review/show/1692985181?utm_medium=api&amp;utm_source=custom_widget"><img alt="Traitor's Blade" border="0" src="https://d.gr-assets.com/books/1389310293s/18947303.jpg" /></a>
+      <div class="gr_custom_each_container_1550341854">
+          <div class="gr_custom_book_container_1550341854">
+            <a title="The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World" rel="nofollow" href="https://www.goodreads.com/review/show/2666859406?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World" border="0" src="https://images.gr-assets.com/books/1435790827s/24612233.jpg" /></a>
           </div>
-          <div class="gr_custom_rating_1468361957">
-            <span class=" staticStars"><img alt="it was amazing" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /></span>
+          <div class="gr_custom_title_1550341854">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/2666859406?utm_medium=api&amp;utm_source=custom_widget">The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World</a>
           </div>
-          <div class="gr_custom_title_1468361957">
-            <a href="https://www.goodreads.com/review/show/1692985181?utm_medium=api&amp;utm_source=custom_widget">Traitor's Blade</a>
+          <div class="gr_custom_author_1550341854">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3242685.Pedro_Domingos">Pedro Domingos</a>
           </div>
-          <div class="gr_custom_author_1468361957">
-            by <a href="https://www.goodreads.com/author/show/7390210.Sebastien_de_Castell">Sebastien de Castell</a>
-          </div>
-          <div class="gr_custom_review_1468361957">
-            Classic fantasy set in a fallen world with corrupt dukes narrated by the dead king's lead Greatcoat, Falcio, a man with a sense of humour despite so many losses and reasonably good with a sword. 
-As good as the world is built and the plo...
-          </div>
-      </div>
-      <div class="gr_custom_each_container_1468361957">
-          <div class="gr_custom_book_container_1468361957">
-            <a title="Social Physics: How Good Ideas Spread— The Lessons from a New Science" href="https://www.goodreads.com/review/show/1683992563?utm_medium=api&amp;utm_source=custom_widget"><img alt="Social Physics: How Good Ideas Spread— The Lessons from a New Science" border="0" src="https://d.gr-assets.com/books/1387175849s/18079689.jpg" /></a>
-          </div>
-          <div class="gr_custom_rating_1468361957">
-            <span class=" staticStars"><img alt="liked it" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /></span>
-          </div>
-          <div class="gr_custom_title_1468361957">
-            <a href="https://www.goodreads.com/review/show/1683992563?utm_medium=api&amp;utm_source=custom_widget">Social Physics: How Good Ideas Spread— The Lessons from a New Science</a>
-          </div>
-          <div class="gr_custom_author_1468361957">
-            by <a href="https://www.goodreads.com/author/show/452879.Alex_Pentland">Alex Pentland</a>
-          </div>
-          <div class="gr_custom_review_1468361957">
-            Although the conclusions are sometimes repeats of classic arguments (eg. Jane Jacob's assertions about the ideal city = active core of business/entertainment easily reached by satellite hubs of smaller cities of ideal size for social int...
-          </div>
-      </div>
-      <div class="gr_custom_each_container_1468361957">
-          <div class="gr_custom_book_container_1468361957">
-            <a title="Moonshot: The Indigenous Comics Collection (Vol. 1)" href="https://www.goodreads.com/review/show/1684031612?utm_medium=api&amp;utm_source=custom_widget"><img alt="Moonshot: The Indigenous Comics Collection" border="0" src="https://d.gr-assets.com/books/1435656532s/25823323.jpg" /></a>
-          </div>
-          <div class="gr_custom_rating_1468361957">
-            <span class=" staticStars"><img src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /></span>
-          </div>
-          <div class="gr_custom_title_1468361957">
-            <a href="https://www.goodreads.com/review/show/1684031612?utm_medium=api&amp;utm_source=custom_widget">Moonshot: The Indigenous Comics Collection</a>
-          </div>
-          <div class="gr_custom_author_1468361957">
-            by <a href="https://www.goodreads.com/author/show/8294520.Hope_Nicholson">Hope Nicholson</a>
-          </div>
-          <div class="gr_custom_tags_1468361957">
+          <div class="gr_custom_tags_1550341854">
             tagged:
-            d-n-f
+            currently-reading and technical
           </div>
       </div>
-      <div class="gr_custom_each_container_1468361957">
-          <div class="gr_custom_book_container_1468361957">
-            <a title="In the Hand of the Goddess (Song of the Lioness, #2)" href="https://www.goodreads.com/review/show/1690873720?utm_medium=api&amp;utm_source=custom_widget"><img alt="In the Hand of the Goddess" border="0" src="https://d.gr-assets.com/books/1388206274s/13835.jpg" /></a>
+      <div class="gr_custom_each_container_1550341854">
+          <div class="gr_custom_book_container_1550341854">
+            <a title="Godel's Proof" rel="nofollow" href="https://www.goodreads.com/review/show/2689324978?utm_medium=api&amp;utm_source=custom_widget"><img alt="Gödel's Proof" border="0" src="https://images.gr-assets.com/books/1410131135s/695429.jpg" /></a>
           </div>
-          <div class="gr_custom_rating_1468361957">
-            <span class=" staticStars"><img alt="it was amazing" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /></span>
+          <div class="gr_custom_title_1550341854">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/2689324978?utm_medium=api&amp;utm_source=custom_widget">Gödel's Proof</a>
           </div>
-          <div class="gr_custom_title_1468361957">
-            <a href="https://www.goodreads.com/review/show/1690873720?utm_medium=api&amp;utm_source=custom_widget">In the Hand of the Goddess</a>
+          <div class="gr_custom_author_1550341854">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/34436.Ernest_Nagel">Ernest Nagel</a>
           </div>
-          <div class="gr_custom_author_1468361957">
-            by <a href="https://www.goodreads.com/author/show/8596.Tamora_Pierce">Tamora Pierce</a>
-          </div>
-          <div class="gr_custom_review_1468361957">
-            I somehow missed the sex as a kid (and with Alanna only 15!) but it's a natural progression and befits the world. She's a wonderful protagonist (proud, brave, stubborn with a flaring temper). I see now where later books have borrowed (qu...
-          </div>
-      </div>
-      <div class="gr_custom_each_container_1468361957">
-          <div class="gr_custom_book_container_1468361957">
-            <a title="Love in Lowercase" href="https://www.goodreads.com/review/show/1689757191?utm_medium=api&amp;utm_source=custom_widget"><img alt="Love in Lowercase" border="0" src="https://d.gr-assets.com/books/1433123206s/25489399.jpg" /></a>
-          </div>
-          <div class="gr_custom_rating_1468361957">
-            <span class=" staticStars"><img src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /></span>
-          </div>
-          <div class="gr_custom_title_1468361957">
-            <a href="https://www.goodreads.com/review/show/1689757191?utm_medium=api&amp;utm_source=custom_widget">Love in Lowercase</a>
-          </div>
-          <div class="gr_custom_author_1468361957">
-            by <a href="https://www.goodreads.com/author/show/124319.Francesc_Miralles">Francesc Miralles</a>
-          </div>
-          <div class="gr_custom_tags_1468361957">
+          <div class="gr_custom_tags_1550341854">
             tagged:
-            d-n-f
+            currently-reading and technical
+          </div>
+      </div>
+      <div class="gr_custom_each_container_1550341854">
+          <div class="gr_custom_book_container_1550341854">
+            <a title="This Idea Must Die: Scientific Theories That Are Blocking Progress" rel="nofollow" href="https://www.goodreads.com/review/show/2691511539?utm_medium=api&amp;utm_source=custom_widget"><img alt="This Idea Must Die: Scientific Theories That Are Blocking Progress" border="0" src="https://images.gr-assets.com/books/1418771663s/22477307.jpg" /></a>
+          </div>
+          <div class="gr_custom_title_1550341854">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/2691511539?utm_medium=api&amp;utm_source=custom_widget">This Idea Must Die: Scientific Theories That Are Blocking Progress</a>
+          </div>
+          <div class="gr_custom_author_1550341854">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/63348.John_Brockman">John Brockman</a>
+          </div>
+          <div class="gr_custom_tags_1550341854">
+            tagged:
+            currently-reading and technical
+          </div>
+      </div>
+      <div class="gr_custom_each_container_1550341854">
+          <div class="gr_custom_book_container_1550341854">
+            <a title="Machine Learning: A Probabilistic Perspective" rel="nofollow" href="https://www.goodreads.com/review/show/2414627385?utm_medium=api&amp;utm_source=custom_widget"><img alt="Machine Learning: A Probabilistic Perspective" border="0" src="https://images.gr-assets.com/books/1500590648s/15857489.jpg" /></a>
+          </div>
+          <div class="gr_custom_title_1550341854">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/2414627385?utm_medium=api&amp;utm_source=custom_widget">Machine Learning: A Probabilistic Perspective</a>
+          </div>
+          <div class="gr_custom_author_1550341854">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/493184.Kevin_P_Murphy">Kevin P. Murphy</a>
+          </div>
+          <div class="gr_custom_tags_1550341854">
+            tagged:
+            currently-reading and technical
+          </div>
+      </div>
+      <div class="gr_custom_each_container_1550341854">
+          <div class="gr_custom_book_container_1550341854">
+            <a title="Version Control with Git" rel="nofollow" href="https://www.goodreads.com/review/show/2642984158?utm_medium=api&amp;utm_source=custom_widget"><img alt="Version Control with Git" border="0" src="https://images.gr-assets.com/books/1328834831s/6548113.jpg" /></a>
+          </div>
+          <div class="gr_custom_title_1550341854">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/2642984158?utm_medium=api&amp;utm_source=custom_widget">Version Control with Git</a>
+          </div>
+          <div class="gr_custom_author_1550341854">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/2961686.Jon_Loeliger">Jon Loeliger</a>
+          </div>
+          <div class="gr_custom_tags_1550341854">
+            tagged:
+            currently-reading and technical
           </div>
       </div>
   <br style="clear: both"/>
   <center>
-    <a href="https://www.goodreads.com/"><img alt="goodreads.com" style="border:0" src="https://www.goodreads.com/images/widget/widget_logo.gif" /></a>
+    <a rel="nofollow" href="https://www.goodreads.com/"><img alt="goodreads.com" style="border:0" src="https://www.goodreads.com/images/widget/widget_logo.gif" /></a>
   </center>
   <noscript>
-    Share <a href="https://www.goodreads.com/">book reviews</a> and ratings with Lara, and even join a <a href="https://www.goodreads.com/group">book club</a> on Goodreads.
+    Share <a rel="nofollow" href="https://www.goodreads.com/">book reviews</a> and ratings with Lara, and even join a <a rel="nofollow" href="https://www.goodreads.com/group">book club</a> on Goodreads.
   </noscript>
   </div>
 
       </div>
-      <script src="https://www.goodreads.com/review/custom_widget/3114636.A%20few%20recent%20reviews?cover_position=left&cover_size=small&num_books=5&order=d&shelf=read&show_author=1&show_cover=1&show_rating=1&show_review=1&show_tags=1&show_title=1&sort=date_updated&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=1&widget_id=1468361957&widget_text_color=000000&widget_title_size=medium&widget_width=full" type="text/javascript" charset="utf-8"></script>
-
+      <script src="https://www.goodreads.com/review/custom_widget/3114636.Recent%20DS%2FScience%20Reads?cover_position=left&cover_size=small&num_books=5&order=a&shelf=technical&show_author=1&show_cover=1&show_rating=0&show_review=0&show_tags=1&show_title=1&sort=date_updated&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=1&widget_id=1550341854&widget_text_color=000000&widget_title_size=medium&widget_width=medium" type="text/javascript" charset="utf-8"></script>
 
 <!-- ********************** -->
 </body>
