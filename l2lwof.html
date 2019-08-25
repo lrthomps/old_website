@@ -35,7 +35,7 @@
 <li>for each epoch of training, $$t$$, record the current params, $$\theta^A_0 = \theta_{t-1}$$ and sample $$s$$ batches of size $$k$$, include example $$x_t, y_t$$ in each</li>
 <li>for each batch $$i$$, record the current params, $$\theta^A_{i, 0} = \theta^A_{i-1} $$</li>
 <li>for each example $$j$$ in the batch, perform a backprop update with learning rate $$\alpha$$ to params $$\theta^A_{i, j}$$</li>
-<li>after the entire batch has been singly learned, meta-learn the parameter update $$\theta^A_i = \theta^A_{i, 0} + \beta (\theta^A_{i, k} - \theta^A_{i, 0})</li>
+<li>after the entire batch has been singly learned, meta-learn the parameter update $$\theta^A_i = \theta^A_{i, 0} + \beta (\theta^A_{i, k} - \theta^A_{i, 0})$$</li>
 <li>the effective loss is $$2\sum_{i=1}^s \sum_{j=1}^k L(x_{ij}, y_{ij}) - \sum_{q=1}^{i-1}\sum_{r=1}^{j-1} {\partial L(x_{ij}, y_{ij}) \over \partial \theta} \cdot {\partial L(x_{qr}, y_{qr}) \over \partial \theta}$$</li>
 <li>note that they update the batch examples singly to maximize the regularizing effect</li>
 <li>algorithms 6 &amp; 7 are alternate ways of prioritizing the current example</li>
