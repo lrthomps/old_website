@@ -5,7 +5,7 @@
 <ul>
 <li>Recall <a href="https://en.wikipedia.org/wiki/Catastrophic_interference">catastrophic forgetting</a>, a neural network sequentially trained on multiple tasks forgets earlier tasks with each new task, apparently not a problem in Bayesian networks</li>
 <li>Why? overwriting weights with updates, …</li>
-<li>How to avoid? limit weight sharing, <strong>balance network stability vs plasticity</strong> (recall of old tasks versus rapid learning of new ones), …</li>
+<li>How to avoid? limit weight sharing, balance network stability vs plasticity (recall of old tasks versus rapid learning of new ones), …</li>
 <li>The loss function: $$\sum_{i, j} L(x_i , y_i ) + L(x_j , y_j ) − \alpha {\partial L(x_i , y_i ) \over \partial \theta} \cdot {\partial L(x_j , y_j ) \over \partial \theta}$$</li>
 <li>The regularizing term is a measure of <em>transfer</em>/<em>interference</em> between updates. The gradient wrt to learning parameters guides the backprop update to those parameters: alignment of gradients means the updates agree and will guide learning for both examples; anti-alignment means updates cancel and neither example will learn; any intervening overlap is deemed transfer/interference for positive/negative values.</li>
 <li>Maximizing weight sharing maximizes transfer; minimizing weight sharing minimizes the change for interference.</li>
