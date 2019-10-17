@@ -7,7 +7,7 @@ layout: default
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: '%b %Y' }}):
       
-      post.content | truncatewords:50 | strip_html
+      {{ post.content | truncatewords:50 | strip_html }}
     </li>
   {% endfor %}
 </ul>
