@@ -4,7 +4,7 @@ use_math: true
 title:  "Learning to learn without forgetting: a summary"
 tags: ["paper summary", "data science"]
 date:   2019-08-28
-summary: Bullet-point form summary of my reading of this excellent paper. Learning to learn without forgetting adds a memory store of past examples; regularizes learning of new updates by balancing recall of these stored earlier examples; allows continual (online) learning in supervised and reinforcement learning settings.
+summary: Bullet-point form summary of this excellent paper. Contributions include: a memory store of past examples; balances learning of new updates with recall of these stored examples; continual (online) learning in supervised and reinforcement learning settings.
 
 ---
 
