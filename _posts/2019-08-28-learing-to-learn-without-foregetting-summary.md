@@ -4,8 +4,11 @@ use_math: true
 title:  "Learning to learn without forgetting: a summary"
 tags: ["paper summary", "data science"]
 date:   2019-08-28
+summary: Bullet-point form summary of my reading of this excellent paper. Learning to learn without forgetting adds a memory store of past examples; regularizes learning of new updates by balancing recall of these stored earlier examples; allows continual (online) learning in supervised and reinforcement learning settings.
 
 ---
+
+
 
 <p>Matthew Riemer et. al. <a href="https://arxiv.org/abs/1810.11910">Learning to Learn Without Forgetting by Maximizing Transfer and Minimizing Interference.</a> <em>ICLR</em>, 2019.</p>
 <ul>
