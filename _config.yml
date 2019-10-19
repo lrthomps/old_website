@@ -21,7 +21,8 @@
 title: Lara Thompson
 email: lara r thompson@gmail
 description: >- # this means to ignore newlines until "baseurl:"
-  A blurb
+  Machine learning, statistics, programming -- and humans.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 repository: lrthomps/lrthomps.github.io
@@ -41,6 +42,10 @@ theme: jekyll-theme-midnight
 logo: assets/images/y_horizon.jpg
 plugins:
   - jekyll-feed
+
+social_links:
+    github: lrthomps
+    linkedin: lara-r-thompson
 
 # Exclude from processing.
 # The following items will not be processed, by default.

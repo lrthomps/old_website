@@ -288,3 +288,47 @@ section #title .credits.right { float: right; }
 @media print, screen and (max-width: 480px) { #header { margin-top: -20px; }
   section { margin-top: 40px; }
   nav { display: none; } }
+
+.footer-col-wrapper {
+  @include relative-font-size(0.9375);
+  color: $grey-color;
+  @extend %clearfix;
+}
+.footer-col-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-col {
+   float: left;
+  width: 50%;
+
+}
+.social-media-list {
+  list-style: none;
+  display: table;
+  margin: 0 auto;
+  li {
+    float: left;
+    margin: 0 5px;
+    &:first-of-type { margin-left: 0 }
+    &:last-of-type { margin-right: 0 }
+    a {
+      display: block;
+      padding: $spacing-unit / 4;
+      border: 1px solid $grey-color-light
+    }
+    &:hover .svg-icon { fill: currentColor; }
+  }
+}
+
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: currentColor;
+  padding: 5px 3px 2px 5px;
+  vertical-align: text-bottom;
+}

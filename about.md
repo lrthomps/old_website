@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+<img src="{{ site.author.avatar | relative_url }}" width="30%"><-- that's me
+
 # About Me
 
 Meet me: Lara Thompson, trained in math and physics, now a data scientist, in Vancouver, BC.

@@ -39,10 +39,27 @@
       </section>
     
       <footer>
-        {% if site.github.is_project_page %}
-        <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-          <br>
-        {% endif %}
+        <div class="footer-col-wrapper">
+          <div class="footer-col one-half">
+            <a href="https://github.com/{{ site.social_links.github | cgi_escape | escape }}" title="{{ site.social_links.github | escape }}">
+              <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a>
+            {{ site.author.name | escape }}
+            <br>
+            <a href="https://www.linkedin.com/in/{{ site.social_links.linkedin | cgi_escape | escape }}" title="{{ site.social_links.linkedin | escape }}">
+              <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg></a>
+            <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+
+
+          </div>
+
+          <div class="footer-col one-half">
+            <p>{{- site.description | escape -}}</p>
+          </div>
+
+
+        </div>
+
+
       <span class="credits right">Hosted on GitHub Pages &mdash; Midnight by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
       </footer>
         
