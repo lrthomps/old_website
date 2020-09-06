@@ -1,11 +1,34 @@
 ---
-layout: default
+layout: plain
 ---
 
+<div id="dhead" class="container">
+  <div class="row">
+      <div id="biopic">
+    </div>
+      <div id="biopic">
+            <h2>
+            <a href="{{ "index.html" | relative_url }}">🏠</a>
+            <a href="https://github.com/{{ site.social_links.github | cgi_escape | escape }}" title="{{ site.social_links.github | escape }}">
+              <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a>
+            <a href="https://www.linkedin.com/in/{{ site.social_links.linkedin | cgi_escape | escape }}" title="{{ site.social_links.linkedin | escape }}">
+              <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg></a> 
+              <a href="{{ "posts.html" | relative_url }}" title="posts">
+              <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg></a> 
+              <a href="{{ "resources.html" | relative_url }}" title="resources">
+              🍌</a></h2>
+     </div>
+
+  </div>
+</div>
+
+
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
-<h2>{{ page.title }}</h2>
+<div id="title">
+<h1>{{ page.title }}</h1>
 
 <p class="view">by {{ page.author | default: site.author.name }}</p>
+</div>
 
 {{content}}
 

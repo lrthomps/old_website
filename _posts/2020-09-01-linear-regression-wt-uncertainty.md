@@ -34,7 +34,7 @@ While the rest of the world is racing after neural networks (that can be defined
 * a numerically stable QR decomposition solution
 * reusing that decomposition to estimate coefficient uncertainty
 
-### Formalising the Problem
+## Formalising the Problem
 
 Suppose we have a dataset with $p$ features and $n$ examples, $\pmb{X} \in \Bbb{R}^{n \times p}$, and a single target, $\pmb{y} \in \Bbb{R}^n$ . The goal is the find a model of the form $\pmb{y} = \pmb{X\beta}$ with minimum reconstruction error, that is,
 
@@ -65,7 +65,7 @@ In OLS $\sigma$ is usually set to 1. The last term can be seen as a regulariser:
 
 The Bayesian regression assumes a prior on the coefficients $\pmb{\beta} \sim N(0, \tau^2)$, and, for simplicity, an uninformative prior on $\sigma$. The posterior is then the product of the likelihood with this prior and the MAP estimate, or maximum *a posteriori* probability, is again found by minimising the log-posterior. This reduces to the same form as ridge regression with $\lambda = \sigma^2 /\tau^2$.
 
-### QR Decomposition
+## QR Decomposition
 
 The minimum of an unconstrained function can be found by setting the first derivative(s) to zero:
 
@@ -95,7 +95,7 @@ $$
 
 the sum of square residuals has absorbed the regularisation term! If $\pmb{\tilde X} = \pmb{\tilde Q \tilde R}$, the solution is exactly as before: $\pmb{\hat \beta} = \pmb{\tilde R}^{-1}\pmb{\tilde Q}^T \pmb{\tilde y}$.
 
-### Uncertainty Estimation
+## Uncertainty Estimation
 
 We would not only like the MAP estimate of the linear regression, but also the variation about it. A quadratic approximation estimates this variation using the inverse Hessian of the loss function at the minimum, the so-called Laplace approximation [8.4.1 in Murphy, 2012]. The second derivative (in the augmented $\lambda$-absorbed version, dropping tildes) is independent of $\beta$: 
 
@@ -119,7 +119,7 @@ where $T$ is the student-t distribution. If $n \gg p$, $T \to N$ for high orders
 
 These estimates assume the model represents the data; that the underlying process generating samples is a linear function with gaussian noise. In my tests, all data were generated this way and still the test set far too frequently fell in the distant tails. These in-sample uncertainty estimates make too many assumptions and are no replacement for cross-validation.
 
-### Sampling for Prediction Uncertainty
+## Sampling for Prediction Uncertainty
 
 The especially useful reason to use QR decomposition is in the form of the covariance matrix for $\pmb{\beta}$ because $\pmb{R}$ is  $p\times p$ and therefore allows us to transform $\pmb{\beta} = \pmb{\hat\beta} + \hat\sigma\pmb{R^{-1} z}$ where  $\pmb{z} \sim T(0, I_p, n-p)$ which can be sampled efficiently. Note that the general transformation of a normal distribution is 
 
@@ -149,9 +149,9 @@ plt.violinplot(np.matmul(x_test, betas).transpose(), x_test[:, 0], widths=0.1)
 
 See the complete <a href="https://github.com/lrthomps/notebooks/blob/master/rl_models.ipynb">notebook on github</a>. 
 
-### Supplementary Notes
+## Supplementary Notes
 
-#### Effective "degrees of freedom"
+### Effective "degrees of freedom"
 
 The effective degrees of freedom in a regularised model is $df(\lambda) = \textrm{tr}\pmb{S}$ where $\hat y = \pmb{S} y$. Evaluating in terms of the original data,
 
@@ -173,7 +173,7 @@ $$
 
 This tells us that the effective degrees of freedom in the model is the number of predictors *reduced* by an amount proportional to $\lambda$. This makes intuitive sense!
 
-#### AIC
+### AIC
 
 We'll need a few definitions to clarify just what errors we can estimate given a certain training dataset. Assuming the target satisfies a probabilistic generating process, repeat measurements of the same predictors will vary; predictions of these *in-sample* examples yield an *in-sample prediction error*. For examples that aren't in the training set, we are more concerned with the *out-of-sample prediction error*.
 
@@ -190,7 +190,7 @@ $$
 
 The Bayesian information criterion (BIC) is similar but replaces $2p \to \log n \; p$ and favours small models.  
 
-### References
+## References
 
 K. P. Murphy.  *Machine Learning: a Probabilistic Perspective*. The MIT Press, 2012.
 

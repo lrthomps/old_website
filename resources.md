@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Books
+## Books
 
 I learn best from reading, not coursera-like videos (though who didn't enjoy Andrew Ng's course?). Papers are important to keep up with the latest, but to fill in the background usually left unexplained, the gaps that are often skipped and to expose the bits I never knew I didn't know: I turn to textbooks. 
 
@@ -32,7 +32,7 @@ Beyond purely technical topics, I also suggest:
 * *Weapons of Math Destruction* on the damage of unacknowledged bias in models
 * *Gödel's Proof* because it's linked to the "No free lunch" theorem
 
-# Advice to get started and keep going
+## Advice from others
 
 <a href="https://developers.google.com/machine-learning/guides/rules-of-ml/">Rules of ML</a> from Google
 
