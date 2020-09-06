@@ -99,9 +99,9 @@ the sum of square residuals has absorbed the regularisation term! If $\pmb{\tild
 
 We would not only like the MAP estimate of the linear regression, but also the variation about it. A quadratic approximation estimates this variation using the inverse Hessian of the loss function at the minimum, the so-called Laplace approximation [8.4.1 in Murphy, 2012]. The second derivative (in the augmented $\lambda$-absorbed version, dropping tildes) is independent of $\beta$: 
 
-$$
+<script type="math/tex; mode=display">% <![CDATA[
 {1 \over 2\sigma^2}\left. {d^2 \over d\pmb{\beta}^2}(\pmb{y} - \pmb{X} \pmb{\beta})^T(\pmb{y} - \pmb{X}\pmb{\beta})\right|_{\beta=\hat\beta, \sigma=\hat\sigma}  = {1 \over \hat\sigma^2}\pmb{X}^T \pmb{X} = {1 \over \hat\sigma^2}\pmb{R}^T \pmb{R}
-$$
+%]]></script>
 
 We can express our solution as $\pmb{\beta} \sim N( \pmb{\hat \beta}, \hat\sigma^2 (\pmb{R}^T \pmb{R})^{-1})$. Had we treated $\sigma$ as a first class unknown parameter to be estimated from the data, the MAP estimate is simply
 
