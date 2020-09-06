@@ -2,9 +2,6 @@
 layout: default
 ---
 
-<img src="{{ site.author.avatar | relative_url }}" width="30%"><-- that's me
-
-
 
 I'm a believer in <a href="https://www.goodreads.com/book/show/25744928-deep-work">Deep Work</a>, known also as deliberate
 practice, made famous in Gladwell's Outliers, better explained in Ericsson's Peak: practicing what's hardest with focus for immediate feedback. 
