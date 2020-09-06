@@ -255,25 +255,49 @@ hr {
     width: 33%;
 }
 
-#dhead {
-    margin: 20px 0;
-}
+
+/* Layout */
 .container {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
+@media (min-width: 850px) {
+    .container {
+        width: 830px;
+     }
+}
 .row {
-    
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
+/* Props */
+#dhead {
+    margin-top: 20px 0;
+}
 #biopic {
     grid-column: span 6;
     text-align: right;
 }
+#bioheadline {
+    padding-top: 80px;
+    padding-left: 20px;
+    grid-column: span 6;
+}
+@media (max-width: 849px) {
+    #biopic {
+      grid-column: span 12;
+      text-align: center;
+    }
+    #bioheadline {
+      grid-column: span 12;
+      padding-top: 20px;
+      text-align: center;
+    }
+}
+
 
 #biopic img {
     width: 260px;
@@ -281,18 +305,14 @@ hr {
     border-radius: 130px;
 }
 
-#bioheadline {
-    padding-top: 80px;
-    padding-left: 20px;
-    grid-column: span 6;
-}
 
 #headlinks {
     padding-left: 20px;
-    grid-column: span 3;
+    grid-column: span 12;
+    text-align: right;
 }
 
-#biopic h2 {
+#headlinks h2 {
 font-style: normal;
 }
 
